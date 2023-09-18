@@ -4,7 +4,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <>
-    <h1>this is a test</h1>
+    <h1>this is a Homepage</h1>
     </>
   )
 }
