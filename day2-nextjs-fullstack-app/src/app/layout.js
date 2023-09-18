@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* this page is the global page and all the content inside it will be used for all the page */}
+        <h1>this is the global layout</h1>
+        {children}
+      </body>
     </html>
   )
 }
