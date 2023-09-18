@@ -4,14 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  margin-bottom: 10px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 .description {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
