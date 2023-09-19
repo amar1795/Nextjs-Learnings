@@ -41,7 +41,6 @@ const page = () => {
             beatae, a suscipit eos. Animi quibusdam cum omnis officiis.
             <br />
             <br />
-
             voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
             esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis

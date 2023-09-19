@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      this is a portfolio slug test page
+      this is a portfolio slug
     </div>
   )
 }
