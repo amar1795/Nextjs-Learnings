@@ -20,6 +20,7 @@
     width: 300px;
     height: 400px;
     position: relative;
+    /* since it is not an image object fit cover won't work hence we have added background size cover */
     /* since background will be preceeded hence we will make this background size as important */
     background-size: cover !important;
   }
@@ -34,8 +35,6 @@
     background: url("/apps.jpg");
   }
 
- 
-  
   .title {
     position: absolute;
     right: 10px;

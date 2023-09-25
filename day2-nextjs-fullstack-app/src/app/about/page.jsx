@@ -10,8 +10,8 @@ const page = () => {
         <Image 
         src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         fill={true}
-        // either can use fill or can specify the height and width
-        // width={500}
+        // either can use fill or can specify the height and width ,once this way height and width given then no need to specify position relative in the css
+        // width={1300}
         // height={500}
         alt=''
         className={styles.img}
@@ -22,7 +22,7 @@ const page = () => {
           </div>
           <div className={styles.imgDesc}>
           Handcrafting award winning digital experiences
-            </div>
+          </div>
         </div>
 
       </div>
@@ -65,7 +65,7 @@ const page = () => {
             <br />
             <br /> - Mobile Apps
           </p>
-
+              
           <Button url="/contact" text="Contact"/>
 
         </div>

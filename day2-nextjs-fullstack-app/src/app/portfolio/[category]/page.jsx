@@ -1,9 +1,10 @@
 import React from 'react'
 
-const page = () => {
+const page = ({params}) => {
+    console.log(params.category)
   return (
     <div>
-      this is a portfolio slug
+      <h1>{params.category}</h1>
     </div>
   )
 }
