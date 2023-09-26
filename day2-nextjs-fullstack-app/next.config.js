@@ -4,6 +4,7 @@ const nextConfig = {
         domains:[
 
             "images.pexels.com",
+            "media.istockphoto.com"
         ]
         
 
