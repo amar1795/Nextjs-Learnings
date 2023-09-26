@@ -5,6 +5,8 @@ import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
 
+
+// fetching the data locally 
 const getData = (cat) => {
   const data = items[cat];
 
