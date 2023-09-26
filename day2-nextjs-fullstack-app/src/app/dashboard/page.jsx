@@ -39,7 +39,7 @@ const Dashboard = () => {
 
   const router = useRouter();
   
-  //NEW WAY TO FETCH DATA  
+  //NEW WAY TO FETCH DATA  from api posts
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   // this cannot be below the loading as it has return and would not be readable
@@ -75,7 +75,10 @@ const Dashboard = () => {
           username: session.data.user.name,
         }),
       });
+  //  whenver the data is updated it will be added without refreshing the page using the mutate function
+
       mutate();
+      // e.target.reset to reset the input fields after adding the values
       e.target.reset()
     } catch (err) {
       console.log(err);
@@ -87,6 +90,7 @@ const Dashboard = () => {
       await fetch(`/api/posts/${id}`, {
         method: "DELETE",
       });
+      // whenver the data is deleted it will be added without refreshing the page using the mutate function
       mutate();
     } catch (err) {
       console.log(err);
@@ -97,6 +101,7 @@ const Dashboard = () => {
     return (
       <div className={styles.container}>
         <div className={styles.posts}>
+          {/* this loading is from swr ie when the data is fetching meanwhile show this loading  */}
           {isLoading
             ? "loading"
             : data?.map((post) => (
