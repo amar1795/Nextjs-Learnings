@@ -39,14 +39,16 @@ const Dashboard = () => {
 
   const router = useRouter();
   
-  //NEW WAY TO FETCH DATA
+  //NEW WAY TO FETCH DATA  
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
+  // this cannot be below the loading as it has return and would not be readable
   const { data, mutate, error, isLoading } = useSWR(
     `/api/posts?username=${session?.data?.user.name}`,
     fetcher
   );
 
+  // loading for the session  when logging it and its taking time then show the loading
   if (session.status === "loading") {
     return <p>Loading...</p>;
   }
