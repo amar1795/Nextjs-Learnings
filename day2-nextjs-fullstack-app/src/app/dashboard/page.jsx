@@ -44,7 +44,7 @@ const Dashboard = () => {
 
   // this cannot be below the loading as it has return and would not be readable
   const { data, mutate, error, isLoading } = useSWR(
-    `/api/posts?username=${session?.data?.user.name}`,
+`/api/posts?username=${session?.data?.user.name}`,
     fetcher
   );
 
