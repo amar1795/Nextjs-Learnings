@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer/Footer'
 import { ThemeProvider } from '@/context/ThemeContext'
+import AuthProvider from '@/components/AuthProvider/AuthProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
         
       <body className={inter.className}>
       <ThemeProvider>
+        <AuthProvider>
+
+       
         <div className="container">
 
         {/* this page is the global page and all the content inside it will be used for all the page */}
@@ -24,6 +28,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         </div>
+        </AuthProvider>
         </ThemeProvider>
       </body>
         

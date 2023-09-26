@@ -34,6 +34,8 @@ const Dashboard = () => {
   // }, []);
 
   const session = useSession();
+  console.log(session)
+  // session will be used anywhere where you want the data to be validated or authenticated
 
   const router = useRouter();
   
